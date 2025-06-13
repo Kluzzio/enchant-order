@@ -6,16 +6,28 @@ var data = {
             incompatible: ["blast_protection", "fire_protection", "projectile_protection"],
             items: ["helmet", "chestplate", "leggings", "boots", "turtle_shell"]
         },
+        aerial_affinity: {
+            levelMax: "1",
+            weight: "1",
+            incompatible: [],
+            items: ["boots"]
+        },
         aqua_affinity: {
             levelMax: "1",
             weight: "2",
             incompatible: [],
             items: ["helmet", "turtle_shell"]
         },
+        backstabbing: {
+            levelMax: "3",
+            weight: "1",
+            incompatible: [],
+            items: ["modded"]
+        },
         bane_of_arthropods: {
             levelMax: "5",
             weight: "1",
-            incompatible: ["smite", "sharpness", "density", "breach"],
+            incompatible: ["smite", "sharpness", "sculk_smite", "density", "breach"],
             items: ["sword", "axe", "mace"]
         },
         blast_protection: {
@@ -24,11 +36,41 @@ var data = {
             incompatible: ["fire_protection", "protection", "projectile_protection"],
             items: ["helmet", "chestplate", "leggings", "boots", "turtle_shell"]
         },
+        catalysis: {
+            levelMax: "3",
+            weight: "1",
+            incompatible: [],
+            items: ["sword", "axe"]
+        },
         channeling: {
             levelMax: "1",
             weight: "4",
             incompatible: ["riptide"],
             items: ["trident"]
+        },
+        chill_aura: {
+            levelMax: "3",
+            weight: "1",
+            incompatible: ["thorns", "fire_react"],
+            items: ["helmet", "chestplate", "leggings", "boots"]
+        },
+        collection: {
+            levelMax: "1",
+            weight: "1",
+            incompatible: [],
+            items: ["axe", "pickaxe", "shovel", "hoe", "shears"]
+        },
+        comb_cutter: {
+            levelMax: "1",
+            weight: "1",
+            incompatible: [],
+            items: ["sword", "shears"]
+        },
+        deepfry: {
+            levelMax: "1",
+            weight: "1",
+            incompatible: [],
+            items: ["fishing_rod"]
         },
         depth_strider: {
             levelMax: "3",
@@ -36,11 +78,29 @@ var data = {
             incompatible: ["frost_walker"],
             items: ["boots"]
         },
+        destruction: {
+            levelMax: "3",
+            weight: "1",
+            incompatible: [],
+            items: ["modded"]
+        },
         efficiency: {
             levelMax: "5",
             weight: "1",
             incompatible: [],
             items: ["pickaxe", "shovel", "axe", "hoe", "shears"]
+        },
+        end_veil: {
+            levelMax: "1",
+            weight: "1",
+            incompatible: [],
+            items: ["helmet"]
+        },
+        enervation: {
+            levelMax: "3",
+            weight: "1",
+            incompatible: [],
+            items: ["sword", "axe"]
         },
         feather_falling: {
             levelMax: "4",
@@ -60,6 +120,12 @@ var data = {
             incompatible: ["blast_protection", "protection", "projectile_protection"],
             items: ["helmet", "chestplate", "leggings", "boots", "turtle_shell"]
         },
+        fire_react: {
+            levelMax: "3",
+            weight: "1",
+            incompatible: ["thorns", "chill_aura"],
+            items: ["helmet", "chestplate", "leggings", "boots"]
+        },
         flame: {
             levelMax: "1",
             weight: "2",
@@ -77,6 +143,18 @@ var data = {
             weight: "2",
             incompatible: ["depth_strider"],
             items: ["boots"]
+        },
+        hell_strider: {
+            levelMax: "2",
+            weight: "1",
+            incompatible: ["frost_walker"],
+            items: ["boots"]
+        },
+        ice_breaker: {
+            levelMax: "5",
+            weight: "1",
+            incompatible: [],
+            items: ["modded"]
         },
         impaling: {
             levelMax: "5",
@@ -135,11 +213,29 @@ var data = {
             incompatible: ["piercing"],
             items: ["crossbow"]
         },
+        neurotoxins: {
+            levelMax: "2",
+            weight: "1",
+            incompatible: [],
+            items: ["modded"]
+        },
+        obsidian_breaker: {
+            levelMax: "3",
+            weight: "1",
+            incompatible: [],
+            items: ["axe", "pickaxe", "shovel", "hoe"]
+        },
         piercing: {
             levelMax: "4",
             weight: "1",
             incompatible: ["multishot"],
             items: ["crossbow"]
+        },
+        potent_poison: {
+            levelMax: "3",
+            weight: "1",
+            incompatible: [],
+            items: ["trident"]
         },
         power: {
             levelMax: "5",
@@ -177,10 +273,28 @@ var data = {
             incompatible: ["channeling", "loyalty"],
             items: ["trident"]
         },
+        rubys_fire: {
+            levelMax: "1",
+            weight: "1",
+            incompatible: [],
+            items: ["modded"]
+        },
+        sand_walker: {
+            levelMax: "1",
+            weight: "1",
+            incompatible: [],
+            items: ["boots"]
+        },
+        sculk_smite: {
+            levelMax: "5",
+            weight: "1",
+            incompatible: ["sharpness", "smite", "bane_of_arthropods"],
+            items: ["sword", "axe"]
+        },
         sharpness: {
             levelMax: "5",
             weight: "1",
-            incompatible: ["bane_of_arthropods", "smite"],
+            incompatible: ["bane_of_arthropods", "smite", "sculk_smite"],
             items: ["sword", "axe"]
         },
         silk_touch: {
@@ -192,14 +306,32 @@ var data = {
         smite: {
             levelMax: "5",
             weight: "1",
-            incompatible: ["bane_of_arthropods", "sharpness", "density", "breach"],
+            incompatible: ["bane_of_arthropods", "sharpness", "sculk_smite", "density", "breach"],
             items: ["sword", "axe", "mace"]
+        },
+        soulbound: {
+            levelMax: "1",
+            weight: "1",
+            incompatible: ["vanishing_curse"],
+            items: ["helmet", "chestplate", "leggings", "boots", "elytra", "sword", "axe", "trident", "pickaxe", "shovel", "hoe", "bow", "crossbow", "shield", "fishing_rod", "shears", "flint_and_steel"]
+        },
+        soul_reaper: {
+            levelMax: "3",
+            weight: "1",
+            incompatible: [],
+            items: ["sword"]
         },
         soul_speed: {
             levelMax: "3",
             weight: "4",
             incompatible: [],
             items: ["boots"]
+        },
+        stasis: {
+            levelMax: "1",
+            weight: "1",
+            incompatible: ["multishot"],
+            items: ["crossbow"]
         },
         sweeping: {
             levelMax: "3",
@@ -242,6 +374,12 @@ var data = {
                 "bow", "shears", "flint_and_steel", "carrot_on_a_stick", "warped_fungus_on_a_stick", "shield", "elytra", "pumpkin",
                 "helmet", "trident", "turtle_shell", "crossbow", "mace"
             ]
+        },
+        vein_mining: {
+            levelMax: "1",
+            weight: "1",
+            incompatible: [],
+            items: ["axe", "pickaxe", "shovel", "hoe"]
         },
         density: {
             levelMax: "5",
@@ -289,5 +427,7 @@ var data = {
         'warped_fungus_on_a_stick',
         'pumpkin',
         'book',
+
+        'modded',
     ]
 };
